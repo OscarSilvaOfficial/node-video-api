@@ -7,7 +7,7 @@ export class VideoController {
   videoSize: number;
 
   constructor() {
-    this.ChunkSize = 10 ** 4;
+    this.ChunkSize = 10 ** 3;
     this.filePath = 'files/test.mp4';
     this.videoSize = fs.statSync(this.filePath).size;
   }
